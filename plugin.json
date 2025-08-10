@@ -1,20 +1,20 @@
 {
-  "id": "vue.snippetsyam",
-  "name": "Vue Snippets Yam",
-  "main": "src/main.js",
+  "id": "acode.plugin.vue-snippetsyam",
+  "name": "Vue Snippet Syam",
+  "main": "main.js",
   "version": "1.0.0",
   "repository": "https://github.com/udenbaguse/vue-snippetsyam",
   "readme": "readme.md",
   "icon": "icon.png",
   "files": [],
-  "minVersionCode": 290,
+  "minVersionCode" : 290,
   "license": "MIT",
   "changelogs": "changelogs.md",
-  "keywords": ["vue", "snippet", "acode", "plugin"],
+  "keywords": [],
   "price": 0,
   "author": {
-    "name": "Uden Baguse",
-    "email": "uden@example.com",
-    "github": "https://github.com/udenbaguse"
+    "name": "Muhamad Syamsudin",
+    "email": "udenbaguselord@gmail.com",
+    "github": "Udenbaguse"
   }
 }
