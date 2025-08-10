@@ -1,6 +1,6 @@
 import plugin from '../plugin.json';
 
-class AcodePlugin {
+class VSyam {
   async init($page) {
     // Buat UI plugin
     $page.innerHTML = `
@@ -28,7 +28,7 @@ class AcodePlugin {
 }
 
 if (window.acode) {
-  const acodePlugin = new AcodePlugin();
+  const acodePlugin = new VSyam();
   acode.setPluginInit(plugin.id, async (baseUrl, $page, { cacheFileUrl, cacheFile }) => {
     if (!baseUrl.endsWith('/')) {
       baseUrl += '/';
