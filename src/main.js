@@ -1,13 +1,29 @@
 import plugin from '../plugin.json';
 
 class AcodePlugin {
+  async init($page) {
+    // Buat UI plugin
+    $page.innerHTML = `
+      <h1>Vue Snippet: vbase</h1>
+      <p>Template dasar Vue 3 dengan &lt;script setup&gt;</p>
+      <button id="copy-vbase">Copy vbase snippet</button>
+    `;
 
-  async init() {
-    // plugin initialisation 
+    // Tambahkan event klik
+    document.getElementById('copy-vbase').onclick = () => {
+      const snippet = `<template></template>\n<script setup></script>\n<style scoped></style>`;
+      this.copyToClipboard(snippet);
+    };
+  }
+
+  copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+      acode.toast('vbase snippet copied!');
+    });
   }
 
   async destroy() {
-    // plugin clean up
+    // Tidak ada yang perlu dibersihkan untuk sekarang
   }
 }
 
